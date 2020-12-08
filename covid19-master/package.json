@@ -3,6 +3,7 @@
     "csv-parse": "^4.8.8"
   },
   "scripts": {
+    "start": "node index.js",
     "try": "node test/test.js"
   }
 }
