@@ -132,7 +132,7 @@ $( "body" ).load( "country.html" );
 
 	$(document).ready(
         $.getJSON("http://localhost:3000/death", function(data){
-           console.log(data[0].Country_Region);
+           
 
 	 $("#Deaths").append("<strong>" + data[0].d62 + "</strong>");
 
@@ -141,7 +141,7 @@ $( "body" ).load( "country.html" );
 	
 	$(document).ready(
         $.getJSON("http://localhost:3000/confirmed", function(data){
-           console.log(data[0].Country_Region);
+       
  $("#Confirmed").append("<strong>" + data[0].d62 + "</strong>");
 
 
@@ -151,7 +151,7 @@ $( "body" ).load( "country.html" );
 
 	$(document).ready(
         $.getJSON("http://localhost:3000/recovered", function(data){
-           console.log(data[0].Country_Region);
+           
 $("#Recovered").append("<strong>" + data[0].d62 + "</strong>");
 
 
