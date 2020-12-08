@@ -134,17 +134,33 @@ $( "body" ).load( "country.html" );
         $.getJSON("http://localhost:3000/death", function(data){
            console.log(data[0].Country_Region);
 
-	}));
-	$(document).ready(
-        $.getJSON("http://localhost:3000/recovered", function(data){
-           console.log(data[0].Country_Region);
+	 $("#Deaths").append("<strong>" + data[0].d62 + "</strong>");
+
 
 	}));
+	
+	$(document).ready(
+        $.getJSON("http://localhost:3000/confirmed", function(data){
+           console.log(data[0].Country_Region);
+ $("#Confirmed").append("<strong>" + data[0].d62 + "</strong>");
+
+
+
+	}));
+	
+
 	$(document).ready(
         $.getJSON("http://localhost:3000/recovered", function(data){
            console.log(data[0].Country_Region);
+$("#Recovered").append("<strong>" + data[0].d62 + "</strong>");
+
 
     }));
+	
+
+
+
+
 
 
 	//xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   thai data api     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -166,10 +182,10 @@ $( "body" ).load( "country.html" );
 		gg = JSON.parse(c_data);
 		//console.log(gg);
 
-		$("#Confirmed").append("<strong>" + gg.Confirmed + "</strong>");
-		$("#Hospitalized").append("<strong>" + gg.Hospitalized + "</strong>");
-		$("#Recovered").append("<strong>" + gg.Recovered + "</strong>");
-		$("#Deaths").append("<strong>" + gg.Deaths + "</strong>");
+		// $("#Confirmed").append("<strong>" + gg.Confirmed + "</strong>");
+		 $("#Hospitalized").append("<strong>" + gg.Hospitalized + "</strong>");
+		// $("#Recovered").append("<strong>" + gg.Recovered + "</strong>");
+		// $("#Deaths").append("<strong>" + gg.Deaths + "</strong>");
 
 
 		$("#NewConfirmed").append("<strong>" + gg.NewConfirmed + "</strong>");
