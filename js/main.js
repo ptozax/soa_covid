@@ -5,14 +5,29 @@ var index_coutry;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function select_ct(sl_coutry) {
-	
-	
-	
-index_coutry=sl_coutry;
 
 
-$( "body" ).load( "country.html" );
+
+	index_coutry = sl_coutry;
+
+
+	$("body").load("country.html");
 
 
 }
@@ -131,57 +146,57 @@ $( "body" ).load( "country.html" );
 
 
 	$(document).ready(
-        $.getJSON("http://localhost:3000/death", function(data){
-			
+		$.getJSON("http://localhost:3000/death", function (data) {
+
 			$("#Deaths").append("<strong>" + data[0].d62 + "</strong>");
 
 			var w_data;
 			w_data = data;
 
 			for (var i = 0; i < w_data.length; i++) {
-	
+
 				$("#country_tb").append(`<tr  onclick="select_ct(${i})" ><th >${i + 1}</th><td>${w_data[i].Country_Region}</td><td>${w_data[i].Province_State}</td></tr>`);
-	
+
 			};
 
 			var w_data2;
 			w_data2 = data;
 
-		
-				
-				$("#country_name").append("<strong> ผู้ติดเชื้อใน " + w_data2[index_coutry].Country_Region + "</strong>");
-				$("#Deaths_ct").append("<strong>" + w_data2[index_coutry].d62 + "</strong>");
-	
-
-	
 
 
-	}));
-	
-	$(document).ready(
-        $.getJSON("http://localhost:3000/confirmed", function(data){
-			var w_data2;
-			w_data2 = data;
-       
- $("#Confirmed").append("<strong>" + data[0].d62 + "</strong>");
- $("#Confirmed_ct").append("<strong>" + w_data2[index_coutry].d62 + "</strong>");
+			$("#country_name").append("<strong> ผู้ติดเชื้อใน " + w_data2[index_coutry].Country_Region + "</strong>");
+			$("#Deaths_ct").append("<strong>" + w_data2[index_coutry].d62 + "</strong>");
 
 
 
-	}));
-	
+
+
+		}));
 
 	$(document).ready(
-        $.getJSON("http://localhost:3000/recovered", function(data){
+		$.getJSON("http://localhost:3000/confirmed", function (data) {
 			var w_data2;
 			w_data2 = data;
-           
-$("#Recovered").append("<strong>" + data[0].d62 + "</strong>");
-$("#Recovered_ct").append("<strong>" + w_data2[index_coutry].d62+ "</strong>");
+
+			$("#Confirmed").append("<strong>" + data[0].d62 + "</strong>");
+			$("#Confirmed_ct").append("<strong>" + w_data2[index_coutry].d62 + "</strong>");
 
 
-    }));
-	
+
+		}));
+
+
+	$(document).ready(
+		$.getJSON("http://localhost:3000/recovered", function (data) {
+			var w_data2;
+			w_data2 = data;
+
+			$("#Recovered").append("<strong>" + data[0].d62 + "</strong>");
+			$("#Recovered_ct").append("<strong>" + w_data2[index_coutry].d62 + "</strong>");
+
+
+		}));
+
 
 
 
@@ -208,7 +223,7 @@ $("#Recovered_ct").append("<strong>" + w_data2[index_coutry].d62+ "</strong>");
 		//console.log(gg);
 
 		// $("#Confirmed").append("<strong>" + gg.Confirmed + "</strong>");
-		 $("#Hospitalized").append("<strong>" + gg.Hospitalized + "</strong>");
+		$("#Hospitalized").append("<strong>" + gg.Hospitalized + "</strong>");
 		// $("#Recovered").append("<strong>" + gg.Recovered + "</strong>");
 		// $("#Deaths").append("<strong>" + gg.Deaths + "</strong>");
 
@@ -228,12 +243,9 @@ $("#Recovered_ct").append("<strong>" + w_data2[index_coutry].d62+ "</strong>");
 	//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX world data api XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
-	
+
 
 	//$.getJSON('https://corona.lmao.ninja/v2/countries?sort=country', function (data) {
-
-		
-
 
 	//});
 
@@ -243,24 +255,25 @@ $("#Recovered_ct").append("<strong>" + w_data2[index_coutry].d62+ "</strong>");
 	var w_data2;
 
 	$.getJSON('https://corona.lmao.ninja/v2/countries?sort=country', function (data) {
-        console.log(document.cookie);
+		console.log(document.cookie);
 		w_data2 = data;
-		 //$("#country_name").append("<strong> ผู้ติดเชื้อใน " + w_data2[index_coutry].country + "</strong>");
-		 //$("#Confirmed_ct").append("<strong>" + w_data2[index_coutry].cases + "</strong>");
+		//$("#country_name").append("<strong> ผู้ติดเชื้อใน " + w_data2[index_coutry].country + "</strong>");
+		//$("#Confirmed_ct").append("<strong>" + w_data2[index_coutry].cases + "</strong>");
 		//$("#Hospitalized_ct").append("<strong>" + w_data2[index_coutry].active + "</strong>");
-		 //$("#Recovered_ct").append("<strong>" + w_data2[index_coutry].recovered+ "</strong>");
-		 //$("#Deaths_ct").append("<strong>" + w_data2[index_coutry].deaths + "</strong>");
-		 
-		
-	
+		//$("#Recovered_ct").append("<strong>" + w_data2[index_coutry].recovered+ "</strong>");
+		//$("#Deaths_ct").append("<strong>" + w_data2[index_coutry].deaths + "</strong>");
 
-		
+
+
+
+
 
 	});
-	
 
 
-	
+
+
+
 
 
 
