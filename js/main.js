@@ -132,7 +132,17 @@ $( "body" ).load( "country.html" );
 
 	$(document).ready(
         $.getJSON("http://localhost:3000/death", function(data){
-           console.log(data);
+           console.log(data[0].Country_Region);
+
+	}));
+	$(document).ready(
+        $.getJSON("http://localhost:3000/recovered", function(data){
+           console.log(data[0].Country_Region);
+
+	}));
+	$(document).ready(
+        $.getJSON("http://localhost:3000/recovered", function(data){
+           console.log(data[0].Country_Region);
 
     }));
 
