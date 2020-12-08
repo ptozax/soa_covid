@@ -64,7 +64,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body style="">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -72,7 +72,8 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="mylogo/LOGO1_-_Copy__3_-removebg-preview.png" alt=""  style="width: 70px ;height: 40px; "/></a>
+                <a href="index.html"><img class="main-logo" src="mylogo/LOGO1_-_Copy__3_-removebg-preview.png"
+                        style="width: 70px ;height: 40px; " alt="" /></a>
                 <strong><img src="img/logo/logosn.png" alt="" /></strong>
             </div>
             <div class="nalika-profile">
@@ -103,10 +104,10 @@
                             <ul class="submenu-angle" aria-expanded="true">
                                 <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">หน้าหลัก
                                         </span></a></li>
+                                <li><a title="Dashboard v.1" href="test.html"><span
+                                            class="mini-sub-pro">แบบทดสอบความเสี่ยง
+                                        </span></a></li>
 
-                              
-                                <li><a title="Product Edit" href="test.html"><span class="mini-sub-pro">แบบทดสอบความเสี่ยง
-                                            </span></a></li>
 
 
                             </ul>
@@ -121,7 +122,8 @@
                                     class="icon nalika-new-file icon-wrap"></i> <span
                                     class="mini-click-non">เพิ่มเติม</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Login" href="me.html"><span class="mini-sub-pro">เกี่ยวกับเรา</span></a></li>
+                                <li><a title="Login" href="me.html"><span
+                                            class="mini-sub-pro">เกี่ยวกับเรา</span></a></li>
 
                             </ul>
                         </li>
@@ -893,7 +895,7 @@
                                             <ul class="collapse dropdown-header-top">
                                                 <li><a href="index.html">ผู้ติดเชื้อ</a></li>
                                                 <li><a href="test.html">แบบทดสอบความเสี่ยง</a></li>
-                                               
+
 
                                             </ul>
                                         </li>
@@ -918,210 +920,53 @@
         </div>
 
 
-        <div class="section-admin container-fluid">
-            <div class="row admin text-center">
-                <div class="col-md-12">
-
-
-
-                    <div class="row" style="margin-top: 30px;">
-                        <div style="color: aliceblue; font-size: 20px;">ผู้ติดเชื้อในไทย </div>
-                    </div>
-
-
-
-                    <div class="row" style="margin-top: 30px;">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                                <h4 class="text-left text-uppercase"><b>ติดเชื้อทั้งหมด</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="col-xs-3 mar-bot-15 text-left">
-                                        <label class="label bg-green">30% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Confirmed"> </h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>กำลังรักษา</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-red">15% <i class="fa fa-level-down"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Hospitalized"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar progress-bar-danger bg-red"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>รักษาหายแล้ว</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-blue">50% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Recovered"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-blue"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>เสียชีวิต</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-purple">5% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Deaths"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-purple"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div class="row" style="margin-top: 10px;">
-
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                                <h4 class="text-left text-uppercase"><b>ติดเชื้อ(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="col-xs-3 mar-bot-15 text-left">
-                                        <label class="label bg-green">30% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewConfirmed"> </h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>กำลังรักษา(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-red">15% <i class="fa fa-level-down"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewHospitalized"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar progress-bar-danger bg-red"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>รักษาหายแล้ว(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-blue">50% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewRecovered"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-blue"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>เสียชีวิต(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-purple">3% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewDeaths"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-purple"></div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-
-
-
-
-                </div>
-            </div>
-
-
-
-        </div>
-
-
 
 
         <div class="container">
 
-            <div class="row">
-                <div style="color: aliceblue; text-align: center; font-size: large; margin-top: 40px;">
-                    ผู้ติดเชื้อทั่วโลก</div>
 
+            <div class="row">
+                <div class="col-lr-6" style=" color: aliceblue; text-align: center; margin-top: 50px;">
+
+
+                    <div style="font-size: 50px;">Chitpanu Thongsaeat</div>
+                    <div style="font-size: 30px;">6030213038-SE</div>
+
+
+
+                </div>
             </div>
+
             <div class="row">
+                <div class="col-lr-6" style=" color: aliceblue; text-align: center; margin-top: 50px; ">
 
-                <div class="col-lr-8" style="margin-top: 30px;" id="nvg">
-                    <table class="table table-dark" style="color: aliceblue; text-align: center;">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col" style="text-align: center;"> Country</th>
 
-                            </tr>
-                        </thead>
-                        <tbody id="country_tb">
+<img src="mylogo/profile.jpg" style="border-radius: 100%;width: 200px;" alt="">
 
-                        </tbody>
-                    </table>
+
 
 
                 </div>
 
+
+
+
+
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
 
@@ -1129,6 +974,23 @@
 
 
 
+
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    </div>
 
 
 

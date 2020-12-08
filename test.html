@@ -64,7 +64,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: aliceblue;">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -72,7 +72,7 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="mylogo/LOGO1_-_Copy__3_-removebg-preview.png" alt=""  style="width: 70px ;height: 40px; "/></a>
+                <a href="index.html"><img class="main-logo" src="mylogo/LOGO1_-_Copy__3_-removebg-preview.png" style="width: 70px ;height: 40px; " alt="" /></a>
                 <strong><img src="img/logo/logosn.png" alt="" /></strong>
             </div>
             <div class="nalika-profile">
@@ -103,10 +103,10 @@
                             <ul class="submenu-angle" aria-expanded="true">
                                 <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">หน้าหลัก
                                         </span></a></li>
+                                <li><a title="Dashboard v.1" href="test.html"><span
+                                            class="mini-sub-pro">แบบทดสอบความเสี่ยง
+                                        </span></a></li>
 
-                              
-                                <li><a title="Product Edit" href="test.html"><span class="mini-sub-pro">แบบทดสอบความเสี่ยง
-                                            </span></a></li>
 
 
                             </ul>
@@ -121,7 +121,8 @@
                                     class="icon nalika-new-file icon-wrap"></i> <span
                                     class="mini-click-non">เพิ่มเติม</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Login" href="me.html"><span class="mini-sub-pro">เกี่ยวกับเรา</span></a></li>
+                                <li><a title="Login" href="me.html"><span
+                                            class="mini-sub-pro">เกี่ยวกับเรา</span></a></li>
 
                             </ul>
                         </li>
@@ -893,7 +894,7 @@
                                             <ul class="collapse dropdown-header-top">
                                                 <li><a href="index.html">ผู้ติดเชื้อ</a></li>
                                                 <li><a href="test.html">แบบทดสอบความเสี่ยง</a></li>
-                                               
+
 
                                             </ul>
                                         </li>
@@ -918,217 +919,158 @@
         </div>
 
 
-        <div class="section-admin container-fluid">
-            <div class="row admin text-center">
-                <div class="col-md-12">
-
-
-
-                    <div class="row" style="margin-top: 30px;">
-                        <div style="color: aliceblue; font-size: 20px;">ผู้ติดเชื้อในไทย </div>
-                    </div>
-
-
-
-                    <div class="row" style="margin-top: 30px;">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                                <h4 class="text-left text-uppercase"><b>ติดเชื้อทั้งหมด</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="col-xs-3 mar-bot-15 text-left">
-                                        <label class="label bg-green">30% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Confirmed"> </h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>กำลังรักษา</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-red">15% <i class="fa fa-level-down"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Hospitalized"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar progress-bar-danger bg-red"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>รักษาหายแล้ว</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-blue">50% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Recovered"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-blue"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>เสียชีวิต</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-purple">5% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="Deaths"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-purple"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div class="row" style="margin-top: 10px;">
-
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                                <h4 class="text-left text-uppercase"><b>ติดเชื้อ(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="col-xs-3 mar-bot-15 text-left">
-                                        <label class="label bg-green">30% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewConfirmed"> </h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>กำลังรักษา(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-red">15% <i class="fa fa-level-down"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewHospitalized"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar progress-bar-danger bg-red"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>รักษาหายแล้ว(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-blue">50% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewRecovered"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-blue"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>เสียชีวิต(รายใหม่)</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-purple">3% <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin" id="NewDeaths"></h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 100%;" class="progress-bar bg-purple"></div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-
-
-
-
-                </div>
-            </div>
-
-
-
-        </div>
-
-
 
 
         <div class="container">
 
+
             <div class="row">
-                <div style="color: aliceblue; text-align: center; font-size: large; margin-top: 40px;">
-                    ผู้ติดเชื้อทั่วโลก</div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-lr-8" style="margin-top: 30px;" id="nvg">
-                    <table class="table table-dark" style="color: aliceblue; text-align: center;">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col" style="text-align: center;"> Country</th>
-
-                            </tr>
-                        </thead>
-                        <tbody id="country_tb">
-
-                        </tbody>
-                    </table>
+<div class="col-lr-6" style="background-color: aliceblue; text-align: center; margin-top: 50px;">
 
 
+
+    <div class="container">    
+            
+        <div id="signupbox" style=" margin-top:0px" class="mainbox col-lr-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">แบบสำรวจความเสี่ยง</div>
+                    <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="/accounts/login/"></a></div>
+                </div>  
+                <div class="panel-body" >
+                    <form method="get" action="#">
+                        <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+                                
+    
+                        <form  class="form-horizontal" method="post" >
+                            <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+                            
+                           
+                            <div id="div_id_username" class="form-group required">
+                                <label for="id_username" class="control-label col-md-4  requiredField"> ชื่อ<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 ">
+                                    <input class="input-md  textinput textInput form-control" id="id_username" maxlength="30" name="username" placeholder="enter your name" style="margin-bottom: 10px" type="text"  required/>
+                                </div>
+                            </div>
+                            <div id="div_id_email" class="form-group required">
+                                <label for="id_email" class="control-label col-md-4  requiredField"> อีเมล<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 ">
+                                    <input class="input-md emailinput form-control" id="id_email" name="email" placeholder="Your current email address" style="margin-bottom: 10px" type="email" required/>
+                                </div>     
+                            </div>
+                            <div id="div_id_password1" class="form-group required">
+                                <label for="id_password1" class="control-label col-md-4  requiredField">โทร<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 "> 
+                                    <input class="input-md textinput textInput form-control" id="id_password1" name="password1" placeholder="Tel" style="margin-bottom: 10px" type="" required/>
+                                </div>
+                            </div>
+                            <div id="div_id_password2" class="form-group required">
+                                 <label for="id_password2" class="control-label col-md-4  requiredField"> เลขบัตรประชาชน<span class="asteriskField"></span> </label>
+                                 <div class="controls col-md-8 ">
+                                    <input class="input-md textinput textInput form-control" id="id_password2" name="password2" placeholder="National ID" style="margin-bottom: 10px" type="" required/>
+                                </div>
+                            </div>
+                           
+                            <div id="div_id_gender" class="form-group required">
+                                <label for="id_gender"  class="control-label col-md-4  requiredField"> เพศ<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                                     <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_1" value="M"  style="margin-bottom: 10px" required>ชาย</label>
+                                     <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_2" value="F"  style="margin-bottom: 10px" required>หญิง </label>
+                                     <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_2" value="F"  style="margin-bottom: 10px" required>อื่นๆ </label>
+                                </div>
+                            </div>
+
+
+                            <div id="div_id_gender" class="form-group required">
+                                <label for="id_gender"  class="control-label col-md-4  requiredField"> คุณมีอาการ ไอ/เจ็บคอหรือไม่<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                                     <label class="radio-inline"> <input type="radio" name="q1" id="id_gender_1" value="M"  style="margin-bottom: 10px"   required>ใช่/Yes</label>
+                                     <label class="radio-inline"> <input type="radio" name="q1" id="id_gender_2" value="F"  style="margin-bottom: 10px"   required >ไม่ใช่/No </label>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div id="div_id_gender" class="form-group required">
+                                <label for="id_gender"  class="control-label col-md-4  requiredField"> คุณมีอาการ มีน้ำมูกหรือไม่<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                                     <label class="radio-inline"> <input type="radio" name="q2" id="q2" value="M"  style="margin-bottom: 10px"   required>ใช่/Yes</label>
+                                     <label class="radio-inline"> <input type="radio" name="q2" id="q2" value="F"  style="margin-bottom: 10px"    required>ไม่ใช่/No </label>
+                                    
+                                </div>
+                            </div>
+                            <div id="div_id_gender" class="form-group required">
+                                <label for="id_gender"  class="control-label col-md-4  requiredField"> หายใจเหนื่อย หรือ หายใจลำบาก<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                                     <label class="radio-inline"> <input type="radio" name="q3" id="q3" value="M"  style="margin-bottom: 10px"   required>ใช่/Yes</label>
+                                     <label class="radio-inline"> <input type="radio" name="q3" id="q3" value="F"  style="margin-bottom: 10px"  required>ไม่ใช่/No </label>
+                                    
+                                </div>
+                            </div>
+                            <div id="div_id_gender" class="form-group required">
+                                <label for="id_gender"  class="control-label col-md-4  requiredField"> คุณเคยไปประเทศกลุ่มเสี่ยงใน14วันที่ผ่านมาหรือไม่เช่น จีน,อิตาลี่มฮ่งกง<span class="asteriskField"></span> </label>
+                                <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                                     <label class="radio-inline"> <input type="radio" name="q4" id="q4" value="M"  style="margin-bottom: 10px"  required>ใช่/Yes</label>
+                                     <label class="radio-inline"> <input type="radio" name="q4" id="q4" value="F"  style="margin-bottom: 10px"  required>  ไม่ใช่/No </label>
+                                    
+                                </div>
+                            </div>
+                        
+
+
+
+
+
+
+
+
+
+                            <div class="form-group">
+                                <div class="controls col-md-offset-4 col-md-8 ">
+                                   
+                                        
+                                </div>
+                            </div> 
+                            <div class="form-group"> 
+                                <div class="aab controls col-md-4 "></div>
+                                <div class="controls col-md-8 ">
+                                    <input type="submit" name="submit" value="submit" class="btn btn-primary btn btn-info"  id="smit" />
+                                   
+                                </div>
+                            </div> 
+                                
+                        </form>
+    
+                    </form>
                 </div>
+            </div>
+        </div> 
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</div>
 
             </div>
+
+
+
+
 
         </div>
-
-
-
-
-
 
 
 
