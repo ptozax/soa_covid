@@ -132,6 +132,8 @@ $( "body" ).load( "country.html" );
 
 	$(document).ready(
         $.getJSON("http://localhost:3000/death", function(data){
+			
+			$("#Deaths").append("<strong>" + data[0].d62 + "</strong>");
 
 			var w_data;
 			w_data = data;
@@ -152,8 +154,6 @@ $( "body" ).load( "country.html" );
 	
 
 	
-
-	 $("#Deaths").append("<strong>" + data[0].d62 + "</strong>");
 
 
 	}));
